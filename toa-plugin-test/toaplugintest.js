@@ -30,5 +30,5 @@ function sendPostMessageData(data)
 };
 
 window.addEventListener("message", getPostMessageData, false);
-console.log('*** Plugin loaded')
+console.log('*** Plugin loaded, referrer: ' + document.referrer);
 sendPostMessageData('{"apiVersion": 1,"method": "ready"}');
