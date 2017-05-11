@@ -2,7 +2,8 @@ function getDomain(url)
 {
     if (url != '') {
         if (url.indexOf("://") > -1) {
-            return url.split('/')[2];
+            var parts = url.split('/');
+            return parts[0]+"//"+parts[2];
         }
         else {
             return url.split('/')[0];
@@ -36,6 +37,6 @@ function sendPostMessageData(data)
 window.addEventListener("message", getPostMessageData, false);
 var openerLocation;
 if (window.opener != null)
-    openerLocation = .document.location.toString();
+    openerLocation = window.opener.document.location.toString();
 console.log('*** Plugin loaded, referrer: ' + document.referrer + ", openerLocation: " + openerLocation);
 sendPostMessageData('{"apiVersion": 1,"method": "ready"}');
