@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Toa Test Plugin</title>
+    <script src="toaplugintest.js"></script>
+    <script>
+        function onSendMessage() {
+            sendPostMessage("Sample message from plugin");
+        }
+    </script>
+</head>
+<body>
+    <h1>Toa Test Plugin</h1>
+    <button onclick="onSendMessage();">Send message</button>
+</body>
+</html>

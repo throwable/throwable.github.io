@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Toa Test Plugin</title>
+    <script>
+function getDomain(url)
+{
+    if (url != '') {
+        if (url.indexOf("://") > -1) {
+            return url.split('/')[2];
+        }
+        else {
+            return url.split('/')[0];
+        }
+    }
+    return '';
+}
+
+function getPostMessageData(event)
+{
+    console.log("*** Message received from "+ getDomain(event.origin) + "\n", event);
+};
+    </script>
+</head>
+<body>
+    <h1>Toa Plugin Test Appication</h1>
+    <a href="http://throwable.github.io/toa-plugin-test/plugin.html" target="_blank">Open plugin</a><br>
+    <a href="plugin.html" target="_blank">Open plugin locally</a>
+</body>
+</html>
