@@ -38,7 +38,7 @@ function getPostMessageData(event)
 {
     console.log("*** Message received from "+ getDomain(event.origin) + "\n", event);
     var pre = document.getElementById("message_body");
-    pre.innerHTML = syntaxHighlight(event.data);
+    pre.innerHTML = syntaxHighlight(JSON.parse(event.data));
 };
 
 function sendPostMessageData(data)
