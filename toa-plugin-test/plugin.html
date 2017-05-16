@@ -6,12 +6,13 @@
     <script src="toaplugintest.js"></script>
     <script>
         function onSendMessage() {
-            sendPostMessage("Sample message from plugin");
+            sendPostMessage('{"apiVersion": 1,"method": "close","backScreen": "default","actions":[]');
         }
     </script>
 </head>
 <body>
     <h1>Toa Test Plugin</h1>
+    <pre id="message_body"></pre>
     <button onclick="onSendMessage();">Send message</button>
 </body>
 </html>
