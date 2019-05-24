@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 html, body {
 	margin: 0;
 	padding: 0;
@@ -11,6 +15,7 @@ html, body {
 	height: 100%;
 	width: 50px;
 	background: #444;
+	border: solid #aaa;
 }
 
 #vh100 {
@@ -19,6 +24,7 @@ html, body {
 	width: 50px;
 	left: 50px;
 	background: #555;
+	border: solid #aaa;
 }
 #fixed-top {
 	position: fixed;
@@ -35,6 +41,15 @@ html, body {
 	left: 100px;
 	bottom: 0;
 	background: #777;
+}
+#fixed-full {
+	position: fixed;
+	width: 50px;
+	left: 150px;
+	bottom: 0;
+	top: 0;
+	background: #888;
+	border: solid #aaa;
 }
 #message {
 	position: fixed;
