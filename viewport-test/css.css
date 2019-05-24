@@ -1,0 +1,44 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	width: 100vw;
+	background: black;
+}
+
+#pct100 {
+	position: fixed;
+	height: 100%;
+	width: 50px;
+	background: #444;
+}
+
+#vh100 {
+	position: fixed;
+	height: 100vh;
+	width: 50px;
+	left: 50px;
+	background: #555;
+}
+#fixed-top {
+	position: fixed;
+	height: 50px;
+	width: 50px;
+	left: 100px;
+	top: 0;
+	background: #666;
+}
+#fixed-bottom {
+	position: fixed;
+	height: 50px;
+	width: 50px;
+	left: 100px;
+	bottom: 0;
+	background: #777;
+}
+#message {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: #fff;
+}
